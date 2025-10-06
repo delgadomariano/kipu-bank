@@ -73,9 +73,8 @@ Aquí se describen las funciones clave y su uso:
 ---
 
 ## 🔗 Dirección del Contrato Desplegado
-
-**⚠️ ESTA SECCIÓN DEBE SER LLENADA POR TI DESPUÉS DEL DESPLIEGUE Y VERIFICACIÓN.**
+ 
 
 | Testnet | Dirección del Contrato | Enlace al Block Explorer |
 | :--- | :--- | :--- |
-| [E.g., Sepolia] | `[Pegar la dirección aquí]` | `[Pegar el enlace de verificación aquí]` |
+| Sepolia | https://sepolia.etherscan.io/tx/0xfacd97e21e39ed921af22cab658fec5d16deb487085431a8655c3b88d05d237d | https://eth-sepolia.blockscout.com/tx/0xfacd97e21e39ed921af22cab658fec5d16deb487085431a8655c3b88d05d237d |
