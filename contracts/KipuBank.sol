@@ -3,13 +3,13 @@ pragma solidity ^0.8.20;
 
 /**
  * @title KipuBank
- * @author [Tu Nombre Aquí]
+ * @author Mariano Delgado
  * @notice Un contrato bancario simple que permite a los usuarios depositar y retirar tokens nativos (ETH)
  * con un límite global de depósitos y un límite por transacción de retiro.
  */
 contract KipuBank {
     /* *******************************************************************
-     * 1. CUSTOM ERRORS
+     * 1. ERRORS
      * *******************************************************************/
 
     /// @dev Se dispara cuando el monto del depósito supera el límite restante del banco.
@@ -39,11 +39,11 @@ contract KipuBank {
 
     /// @dev El umbral máximo de retiro por transacción que cualquier usuario puede realizar.
     /// @custom:security Implementa un límite de retiro por transacción para mitigar grandes pérdidas en caso de exploit.
-    immutable public i_withdrawalLimitPerTx;
+    uint256 immutable public i_withdrawalLimitPerTx;
 
     /// @dev El límite total (cap) de tokens nativos que el contrato puede contener.
     /// @custom:security Limita la exposición total del contrato a un valor fijo.
-    immutable public i_bankCap;
+    uint256 immutable public i_bankCap;
 
     // --- Storage Variables (Clean, readable, well-commented) ---
 
